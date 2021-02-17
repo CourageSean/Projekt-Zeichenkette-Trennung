@@ -13,7 +13,6 @@
       <div id="container-oben">
         <div id="oben-container-left">
           <div id="speech-box-left">
-            Vorderteil
             <p id="vorderTxt"></p>
           </div>
         </div>
@@ -23,13 +22,12 @@
               src="assets/images/istockphoto-1162284680-612x612-removebg-preview.png"
               alt=""
             />
-            <div id="speech-box-middle">middle</div>
+            <div id="speech-box-middle"></div>
           </div>
         </div>
         <div id="oben-container-right">
           <div id="speech-box-right">
             <p id="hinterTxt"></p>
-            hinten
           </div>
         </div>
       </div>
@@ -44,15 +42,15 @@
         <input
           id="zeichenketteFürDieTrennungsposition"
           type="text"
-          placeholder="Enter Word"
+          placeholder="enter word"
         />
         <div id="davorTrennenContainer">
-          <label for="davorTrennen">Cut befor this word</label>
+          <label for="davorTrennen">Cut <span> BEFORE</span> this word</label>
           <input id="davorTrennen" type="radio" name="davor-danach-trennen" />
         </div>
 
         <div id="danachTrennenContainer">
-          <label for="danachTrennen">Cut after this word</label>
+          <label for="danachTrennen">Cut <span>AFTER</span> this word</label>
           <input
             id="danachTrennen"
             type="radio"
@@ -61,7 +59,20 @@
           />
         </div>
 
-        <input id="btn" type="button" value="Trennen" onclick="trennen()" />
+        <input id="btn" type="button" value="Cut" onclick="trennen()" />
+        <div id="description">
+          <h4>Description:</h4>
+          <p>
+            Use the first inbox-textfield and type in a sentence of your choise.
+          </p>
+          <p>
+            Below it enter a word which the first sentence may contain or not.
+          </p>
+          <p>
+            Now select if the sentence should be cut before or after the choosen
+            word.
+          </p>
+        </div>
       </div>
     </section>
 

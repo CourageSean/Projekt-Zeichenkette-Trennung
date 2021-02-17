@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300;1,400&family=Roboto:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -51,43 +53,146 @@ img {
 
 #zuTrennendeZeichenkette {
   width: 30%;
-  height: 30px;
+  height: 40px;
   display: block;
   margin: auto;
+  margin-bottom: 5px;
+}
+
+#zuTrennendeZeichenkette::-webkit-input-placeholder {
+  text-align: center;
+}
+
+#zuTrennendeZeichenkette::-moz-placeholder {
+  text-align: center;
+}
+
+#zuTrennendeZeichenkette:-ms-input-placeholder {
+  text-align: center;
+}
+
+#zuTrennendeZeichenkette::-ms-input-placeholder {
+  text-align: center;
+}
+
+#zuTrennendeZeichenkette::placeholder {
+  text-align: center;
 }
 
 #zeichenketteFürDieTrennungsposition {
   display: block;
   margin: auto;
   height: 30px;
+  margin-bottom: 10px;
+}
+
+#zeichenketteFürDieTrennungsposition::-webkit-input-placeholder {
+  text-align: center;
 }
 
 #davorTrennenContainer {
   display: flex;
   justify-content: center;
+  color: #fff;
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 #danachTrennenContainer {
   display: flex;
   justify-content: center;
+  color: #fff;
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 #btn {
   display: block;
   margin: auto;
+  padding: 8px 3%;
+  margin-top: 10px;
+  background: tomato;
+  border: none;
+  font-size: 1.1rem;
 }
 
 #speech-box-left,
-#speech-box-middle,
 #speech-box-right {
   width: 70%;
   height: 65%;
   position: absolute;
-  border: #000 solid 2px;
+  border: rgb(98, 94, 94) solid 5px;
+  background: #fff;
+  border-radius: 30px;
 }
 
 #speech-box-middle {
   width: 50%;
 }
 
+#speech-box-left {
+  top: 30%;
+  display: grid;
+  place-items: center;
+}
+
+#speech-box-right {
+  top: 10%;
+  display: grid;
+  place-items: center;
+}
+
+#hinterTxt {
+  font-size: 1.2rem;
+  font-family: "Comic Neue";
+  font-weight: 600;
+  text-align: center;
+}
+
+#vorderTxt {
+  font-size: 1.2rem;
+  font-family: "Comic Neue";
+  font-weight: 600;
+}
+
+span {
+  color: tomato;
+}
+
+#davorTrennen {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+#danachTrennen {
+  margin-top: 6px;
+  margin-left: 18.5px;
+}
+
+#description {
+  width: 20%;
+  height: 40%;
+  background: tomato;
+  right: 5%;
+  bottom: 18%;
+  position: absolute;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  padding: 0 6px;
+  font-family: "Comic Neue";
+  color: #fff;
+}
+
+#description h4 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#description p {
+  text-align: center;
+  color: #fff;
+}
 /*===================================================*/

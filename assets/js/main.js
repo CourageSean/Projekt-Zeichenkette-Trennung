@@ -24,11 +24,9 @@ function trennen() {
         arr1.indexOf(zeichenketteFürDieTrennungsposition.value),
         arr1.lenght
       );
-      console.log(arr2);
-      console.log(arr2.join(" "));
+
       vorderTxt.innerHTML = arr2.join(" ");
-      console.log(arr3);
-      console.log(arr3.join(" "));
+
       hinterTxt.innerHTML = arr3.join(" ");
     } else if (danachTrennen.checked) {
       let arr2 = arr1.slice(
@@ -39,17 +37,13 @@ function trennen() {
         arr1.indexOf(zeichenketteFürDieTrennungsposition.value) + 1,
         arr1.lenght
       );
-      console.log(arr2);
-      console.log(arr2.join(" "));
+
       vorderTxt.innerHTML = arr2.join(" ");
-      console.log(arr3);
-      console.log(arr3.join(" "));
+
       hinterTxt.innerHTML = arr3.join(" ");
     }
   } else {
-    console.log("not in");
-    console.log("Das Zeichen konnte nicht gefunden werden.");
-    vorderTxt.innerHTML = "Das Zeichen konnte nicht gefunden werden.";
+    vorderTxt.innerHTML = "Joo! Couldn't find any of that word.";
   }
 }
 
