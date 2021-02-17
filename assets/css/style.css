@@ -195,4 +195,40 @@ span {
   text-align: center;
   color: #fff;
 }
+
+#slogan1 {
+  position: absolute;
+  top: 7%;
+  font-family: "Comic Neue";
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600;
+  transform: rotate(-35deg);
+  left: 16%;
+}
+#slogan2 {
+  position: absolute;
+  top: 15%;
+  font-family: "Comic Neue";
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.3rem;
+  right: 25%;
+  transform: rotate(30deg);
+}
+#slogan1c {
+  color: tomato;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Comic Neue";
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+}
+#cutterA {
+  color: tomato;
+  font-size: 1.8rem;
+}
 /*===================================================*/
