@@ -1,0 +1,12 @@
+body {
+  width: 100vw;
+}
+section {
+  width: 100vw;
+}
+
+article {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+}
