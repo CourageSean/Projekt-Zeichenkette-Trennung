@@ -52,3 +52,10 @@ function trennen() {
     vorderTxt.innerHTML = "Das Zeichen konnte nicht gefunden werden.";
   }
 }
+
+zeichenketteFürDieTrennungsposition.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("btn").click();
+  }
+});

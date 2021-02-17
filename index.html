@@ -10,40 +10,46 @@
 
   <body>
     <section>
-      <h2>Zeichenketten- Trennungsmaschine</h2>
-
-      <label for="zuTrennendeZeichenkette">Zu trennende Zeichenkette</label>
-      <input id="zuTrennendeZeichenkette" type="text" />
-      <br />
-      <label for="zeichenketteFürDieTrennungsposition"
-        >Zeichenkette für die Trennungsposition</label
-      >
-      <input id="zeichenketteFürDieTrennungsposition" type="text" />
-      <br />
-      <label for="davorTrennen">davor trennen</label>
-      <input id="davorTrennen" type="radio" name="davor-danach-trennen" />
-      <br />
-      <label for="danachTrennen">danach trennen</label>
-      <input
-        id="danachTrennen"
-        type="radio"
-        name="davor-danach-trennen"
-        checked
-      />
-      <br />
-      <input type="button" value="Trennen" onclick="trennen()" />
-
-      <h3>Ausgabe</h3>
-      <article>
-        <div>
+      <div id="container-oben">
+        <div id="oben-container-left">
           <h4>Vorderer Teil</h4>
           <p id="vorderTxt"></p>
         </div>
-        <div>
+        <div id="oben-container-middle">
+          <div id="img-wrapper">
+            <img
+              src="assets/images/istockphoto-1162284680-612x612-removebg-preview.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="oben-container-right">
           <h4>Hinterer Teil</h4>
           <p id="hinterTxt"></p>
         </div>
-      </article>
+      </div>
+      <div>
+        <label for="zuTrennendeZeichenkette">Zu trennende Zeichenkette</label>
+        <input id="zuTrennendeZeichenkette" type="text" />
+        <br />
+        <label for="zeichenketteFürDieTrennungsposition"
+          >Zeichenkette für die Trennungsposition</label
+        >
+        <input id="zeichenketteFürDieTrennungsposition" type="text" />
+        <br />
+        <label for="davorTrennen">davor trennen</label>
+        <input id="davorTrennen" type="radio" name="davor-danach-trennen" />
+        <br />
+        <label for="danachTrennen">danach trennen</label>
+        <input
+          id="danachTrennen"
+          type="radio"
+          name="davor-danach-trennen"
+          checked
+        />
+        <br />
+        <input id="btn" type="button" value="Trennen" onclick="trennen()" />
+      </div>
     </section>
 
     <script src="assets/js/main.js"></script>

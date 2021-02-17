@@ -10,3 +10,26 @@ article {
   width: 40vw;
   justify-content: space-between;
 }
+
+#container-oben {
+  display: flex;
+  justify-content: space-between;
+}
+
+#img-wrapper {
+  width: 80%;
+}
+
+img {
+  width: 100%;
+}
+
+#oben-container-left {
+  flex: 0 1 auto;
+}
+#oben-container-middle {
+  flex: 0 1 auto;
+}
+#oben-container-right {
+  flex: 0 1 auto;
+}
