@@ -49,5 +49,6 @@ function trennen() {
   } else {
     console.log("not in");
     console.log("Das Zeichen konnte nicht gefunden werden.");
+    vorderTxt.innerHTML = "Das Zeichen konnte nicht gefunden werden.";
   }
 }
